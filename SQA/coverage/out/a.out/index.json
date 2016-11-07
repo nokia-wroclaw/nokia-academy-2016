@@ -1,10 +1,10 @@
 var data = {files:[
 {"link":"stdio2.h.ef72ee60.html","title":"stdio2.h","summary_name":"/usr/include/x86_64-linux-gnu/bits/stdio2.h","covered_class":"lineNoCov","covered":"0.0","covered_lines":"0","uncovered_lines":"1","total_lines" : "1"},
 {"link":"string3.h.ab56b225.html","title":"string3.h","summary_name":"/usr/include/x86_64-linux-gnu/bits/string3.h","covered_class":"lineNoCov","covered":"0.0","covered_lines":"0","uncovered_lines":"2","total_lines" : "2"},
-{"link":"iostream.d0f903.html","title":"iostream","summary_name":"/usr/include/c++/6/iostream","covered_class":"lineNoCov","covered":"0.0","covered_lines":"0","uncovered_lines":"1","total_lines" : "1"},
 {"link":"fcntl2.h.520eacd4.html","title":"fcntl2.h","summary_name":"/usr/include/x86_64-linux-gnu/bits/fcntl2.h","covered_class":"lineNoCov","covered":"0.0","covered_lines":"0","uncovered_lines":"1","total_lines" : "1"},
-{"link":"coverage.cpp.44b834e5.html","title":"coverage.cpp","summary_name":"/tmp/tmp.pDHVAyoYZk/nokia-academy-2016/SQA/coverage/coverage.cpp","covered_class":"lineNoCov","covered":"0.0","covered_lines":"0","uncovered_lines":"30","total_lines" : "30"},
+{"link":"coverage.cpp.44b834e5.html","title":"coverage.cpp","summary_name":"/tmp/tmp.pDHVAyoYZk/nokia-academy-2016/SQA/coverage/coverage.cpp","covered_class":"lineCov","covered":"85.2","covered_lines":"23","uncovered_lines":"4","total_lines" : "27"},
+{"link":"iostream.d0f903.html","title":"iostream","summary_name":"/usr/include/c++/6/iostream","covered_class":"lineCov","covered":"100.0","covered_lines":"1","uncovered_lines":"0","total_lines" : "1"},
 ]};
 var percent_low = 25;var percent_high = 75;
-var header = { "command" : "a.out", "date" : "2016-11-07 14:09:03", "instrumented" : 35, "covered" : 0,};
+var header = { "command" : "a.out", "date" : "2016-11-07 14:29:56", "instrumented" : 32, "covered" : 24,};
 var merged_data = [];

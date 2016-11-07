@@ -72,7 +72,7 @@ var data = {lines:[
 {"lineNum":"   71","line":"  //@}"},
 {"lineNum":"   72","line":""},
 {"lineNum":"   73","line":"  // For construction of filebuffers for cout, cin, cerr, clog et. al."},
-{"lineNum":"   74","line":"  static ios_base::Init __ioinit;","class":"lineNoCov","hits":"0","possible_hits":"1",},
+{"lineNum":"   74","line":"  static ios_base::Init __ioinit;","class":"lineCov","hits":"2","possible_hits":"2",},
 {"lineNum":"   75","line":""},
 {"lineNum":"   76","line":"_GLIBCXX_END_NAMESPACE_VERSION"},
 {"lineNum":"   77","line":"} // namespace"},
@@ -80,5 +80,5 @@ var data = {lines:[
 {"lineNum":"   79","line":"#endif /* _GLIBCXX_IOSTREAM */"},
 ]};
 var percent_low = 25;var percent_high = 75;
-var header = { "command" : "a.out", "date" : "2016-11-07 14:09:03", "instrumented" : 1, "covered" : 0,};
+var header = { "command" : "a.out", "date" : "2016-11-07 14:29:56", "instrumented" : 1, "covered" : 1,};
 var merged_data = [];
