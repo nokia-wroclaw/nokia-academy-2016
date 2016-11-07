@@ -1,0 +1,87 @@
+        -:    0:Source:coverage.cpp
+        -:    0:Graph:coverage.gcno
+        -:    0:Data:coverage.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://Zebrać "pokrycie kodu" za pomocą kcov
+        -:    2://(opcjonalne) Zebrać pokrycie kodu za pomocą lcov + genhtml
+        -:    3:
+        -:    4:#include <iostream>
+        -:    5:#include <memory>
+        -:    6:#include <fstream>
+        -:    7:#include <stdlib.h>
+        -:    8:
+        1:    9:class BaseClass
+        -:   10:{
+        -:   11:public:
+        1:   12:    void fastFunction()
+        -:   13:    {
+       21:   14:        for (size_t i = 0; i < 20; ++i)
+        -:   15:        {
+       20:   16:            std::cout << i << std::endl;
+        -:   17:        }
+        1:   18:    }
+        -:   19:
+    #####:   20:    virtual ~BaseClass(){}
+        -:   21:
+        1:   22:    size_t timeConsumingJob()
+        -:   23:    {
+        -:   24:        size_t result;
+        -:   25:
+        1:   26:        if (result > 0)
+        -:   27:        {
+        1:   28:            result = 0;
+        -:   29:        }
+        -:   30:
+     3001:   31:        for (size_t i = 0; i < 3000; ++i)
+        -:   32:        {
+     3000:   33:            result += i;
+        -:   34:        }
+        -:   35:
+        -:   36:        if (true)
+        -:   37:        {
+        1:   38:            ++result;
+        -:   39:        }
+        -:   40:
+        1:   41:        return result;
+        -:   42:    }
+        -:   43:};
+        -:   44:
+        -:   45:
+        -:   46:class SpecialClass : public BaseClass
+        -:   47:{
+        -:   48:public:
+        1:   49:    SpecialClass()
+        1:   50:    {
+        1:   51:        char * privMember = new char[10];
+        1:   52:        void * uninti = new int[1000];
+        1:   53:    }
+        -:   54:
+    #####:   55:    virtual ~SpecialClass()
+    #####:   56:    {
+        -:   57:        // delete privMember;
+    #####:   58:    }
+        -:   59:
+        -:   60:private:
+        -:   61:    char * privMember;
+        -:   62:};
+        -:   63:
+        -:   64:
+        -:   65:
+        -:   66:
+        -:   67:
+        -:   68:
+        1:   69:int executeMainLoop()
+        -:   70:{
+        1:   71:    BaseClass * base = new SpecialClass;
+        1:   72:    base->fastFunction();
+        1:   73:    return (base->timeConsumingJob() > 0)? 0 : -1;
+        -:   74:}
+        -:   75:
+        -:   76:
+        1:   77:int main(int argc, char *argv[])
+        -:   78:{
+        1:   79:    return executeMainLoop();
+        -:   80:    int i = 0;
+        -:   81:    return i + 2;
+        3:   82:}

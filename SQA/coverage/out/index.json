@@ -1,0 +1,5 @@
+var data = {files:[
+{"link":"a.out/index.html","title":"a.out","summary_name":"a.out","covered_class":"lineNoCov","covered":"0.0","covered_lines":"0","uncovered_lines":"35","total_lines" : "35"},
+], merged_files:[]};
+var percent_low = 25;var percent_high = 75;
+var header = { "command" : "a.out", "date" : "2016-11-07 14:09:03", "instrumented" : 35, "covered" : 0,};
