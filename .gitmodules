@@ -1,0 +1,3 @@
+[submodule "RefactoringWorkshop/googletest-master"]
+	path = RefactoringWorkshop/googletest-master
+	url = git@github.com:google/googletest.git
